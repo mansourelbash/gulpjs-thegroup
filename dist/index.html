@@ -6,10 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/x-icon" href="./images/favicon-16x16.png">
     <title>The Group Company</title>
+    <!-- Collect all files using channels and fonts using gulp minFonts & copyIcons & copyWebFont-->
     <link href="./font-awsome/font-awsome-all.css" rel="stylesheet">
+    <!-- Collect all style files into one file and convert from scss format to css ( gulp scss and gulp concat)-->
     <link rel="stylesheet" href="./css/main.css">
   </head>
   <body> 
+    <!-- Divide the page into several partial and components using pugjs-->
     <header>
       <div class="header__container">
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
@@ -277,6 +280,7 @@
         </div>
       </div>
     </div>
+    <!-- using here the gulp conact and gulp uglify to collect all plguins with one file ( gulp concat & gulp uglify, gulp-autoprefixer, gulp-sourcemap)-->
     <script src="./js/plugin/plugins.js"></script>
     <script src="http://localhost:35729/livereload.js"></script>
   </body>
