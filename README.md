@@ -1,4 +1,4 @@
-# Building a Full Responsive Landing Page with Gulp.js
+# Building a Full Responsive Page with Gulp.js
 
 This project utilizes Gulp.js, a powerful task runner, to streamline the development and build process for creating a fully responsive landing page. We'll be employing various Gulp plugins such as `gulp-concat`, `gulp-uglify`, `gulp-minify`, `gulp-fontmin`,  `gulp-zip`, `gulp-livereload`,  `gulp-notify`, `gulp-minimages`, `gulp-clean-css`, `gulp-pug`, `gulp-browser-sync`, `gulp-sourcemaps`, `gulp-autoprefixer` along with integrating jQuery library, Bootstrap grid system, and BEM methodology. Additionally, we'll cover meta tags, Pug.js templates, media queries, font conversion, and integrating FontAwesome for icons.
 
@@ -20,8 +20,8 @@ This project utilizes Gulp.js, a powerful task runner, to streamline the develop
 3. **Run the Gulp Tasks:**
 
    ```bash
-   gulp
    gulp run-all-tasks
+   gulp watch || gulp
    ```
 
    This will start the development server and compile and watch for changes in your files.
