@@ -1,0 +1,69 @@
+.section_my-properties{
+  ul{
+    @include desktop-md{
+      flex-wrap: wrap;
+      gap: 30px
+    }
+    @include mobile{
+      flex-direction: row;
+      margin-bottom: 20px;
+      gap: 0px
+    }
+    list-style: none;
+    display: flex;
+    padding: 0px;
+    margin: 0px;
+    margin-top: 5px;
+
+  }
+  .property{
+    &__item{
+      @include ipad{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+      @include mobile{
+        margin-bottom: 20px;
+        display: flex;
+        justify-content: center;
+      }
+      margin: 0px 25px;
+      display: flex;
+      align-items: center;
+      @include large_screen{
+        margin: 0px 10px;
+      }
+      &.dashboard-image{
+        img{
+          @include large_screen{
+            height: initial;
+            max-width: 75px;
+          }
+          max-width: 100%;
+          border-radius: 10px;
+          height: 55px;
+          position: relative;
+          top: -14px;
+        }
+      }
+    }
+    &__name{
+      color:$black_bg_200;
+      margin-left: 5px;
+      @include desktop-lg{
+        font-size: 12px;
+      }
+      @include ipad{
+        font-size: 12px;
+      }
+
+    }
+    &__number{
+      color: $purple_bg_200;
+    }
+
+  }
+
+}

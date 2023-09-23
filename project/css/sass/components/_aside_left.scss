@@ -1,0 +1,97 @@
+.market-by-price {
+  &__container {
+    @include mobile {
+      margin-top: 15px;
+    }
+    background-color: $base_white;
+    border: 2px solid $theme_color;
+    border-radius: 5px;
+    padding: 5px 10px;
+
+    .nav-market-price {
+      padding: 0;
+
+      .nav-item {
+        font-size: 12px;
+        display: inline-block;
+
+        .nav-link {
+          color: $gray_color;
+          font-family: 'DroidArabicKufi-Bold';
+
+          &.active {
+            color: $theme_purple_color;
+            border: 0;
+            border-bottom: 2px solid $theme_purple_color;
+          }
+        }
+      }
+    }
+
+    .table-market-custom, th, td {
+      border: 1px solid $base_white;
+      border-collapse: collapse;
+
+      td {
+        padding: 4px 0;
+        text-align: center;
+      }
+    }
+
+    tbody {
+      tr {
+        td:nth-child(1), td:nth-child(2) {
+          background-color: $table_bg_orange_100;
+        }
+      }
+
+      tr:nth-child(n + 11):nth-child(-n + 15) {
+        td:nth-child(1), td:nth-child(2) {
+          background-color: $table_bg_orange_200;
+        }
+      }
+
+      tr:nth-child(-n + 3) {
+        td:nth-child(3) {
+          background-color: $table_bg_orange_300;
+        }
+      }
+
+      tr:nth-child(4), tr:nth-child(5), tr:nth-child(6) {
+        td:nth-child(3) {
+          background-color: $table_bg_orange_400;
+        }
+      }
+
+      tr:nth-child(n + 7):nth-child(-n + 10) {
+        td {
+          background-color: $table_bg_orange_500;
+        }
+      }
+
+      tr:nth-child(11) {
+        td:nth-child(3) {
+          background-color: #91c9a5;
+        }
+      }
+
+      tr:nth-child(n + 12):nth-child(-n + 15) {
+        td:nth-child(3) {
+          background-color: $table_bg_blue_100;
+        }
+      }
+
+      tr:nth-child(n + 16):nth-child(-n + 18) {
+        td:nth-child(3) {
+          background-color: $table_bg_blue_200;
+        }
+      }
+
+      tr:nth-child(19), tr:nth-child(20) {
+        td:nth-child(3) {
+          background-color: $table_bg_blue_300;
+        }
+      }
+    }
+  }
+}

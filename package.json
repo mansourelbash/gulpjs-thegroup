@@ -1,0 +1,41 @@
+{
+  "name": "mansourbash",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "mansourbash",
+  "license": "ISC",
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^8.0.0",
+    "gulp-changed": "^4.0.3",
+    "gulp-fontmin": "^0.7.4",
+    "gulp-image-resize": "^0.13.1",
+    "gulp-imagemin": "^8.0.0",
+    "gulp-notify": "^4.0.0",
+    "gulp-pug": "^5.0.0",
+    "gulp-sass": "^5.1.0",
+    "gulp-tinify": "^1.0.2",
+    "gulp-uglify": "^3.0.2",
+    "imagemin-jpeg-recompress": "^7.1.0",
+    "imagemin-pngquant": "^9.0.2",
+    "imagemin-svgo": "^10.0.1",
+    "sass": "^1.67.0"
+  },
+  "dependencies": {
+    "animate.css": "^4.1.1",
+    "bootstrap": "^4.6.2",
+    "gulp-clean-css": "^4.3.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-livereload": "^4.0.2",
+    "gulp-sourcemaps": "^3.0.0",
+    "gulp-tinypng-compress": "^1.2.5",
+    "gulp-zip": "^5.1.0",
+    "livereload": "^0.9.3",
+    "pug": "^3.0.2",
+    "static-server": "^2.2.1"
+  }
+}

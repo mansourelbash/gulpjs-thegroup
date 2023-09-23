@@ -1,0 +1,100 @@
+div.market-by-price__container
+  ul.nav.nav-tabs.nav-market-price#myTab(role='tablist')
+    li.nav-item(role='presentation')
+      button.nav-link.active(id='home-tab', data-toggle='tab', data-target='#market_price', type='button', role='tab', aria-controls='home', aria-selected='true')
+        i.fa-solid.fa-sort.margin-left--5
+        |  السوق حسب الاسعار
+    li.nav-item(role='presentation')
+      button.nav-link(id='profile-tab', data-toggle='tab', data-target='#bargains', type='button', role='tab', aria-controls='profile', aria-selected='false')
+        i.fa-solid.fa-filter.margin-left--5
+        | الصفقات
+  .tab-content#myTabContent
+    div.tab-pane.fade.show.active(id='market_price', role='tabpanel', aria-labelledby='home-tab')
+      table.table.table-market-custom
+        thead
+          tr
+            td #
+            td الأسهم
+            td السعر
+        tbody
+          tr
+            td 17
+            td 100,950
+            td 5.039
+          tr
+            td 1
+            td 10,950
+            td 5.039
+          tr
+            td 1
+            td 1,444,400
+            td 5.039
+          tr
+            td 5
+            td 85,000
+            td 5.029
+          tr
+            td 1
+            td 275,000
+            td 5.020
+          tr
+            td 1
+            td 5,000
+            td 5.015
+          tr
+            td 1
+            td 50,000
+            td 5.013
+          tr
+            td 1
+            td 275,000
+            td 5.010
+          tr
+            td 1
+            td 10,950
+            td 5.005
+          tr
+            td 1
+            td 20,000
+            td 5.001
+          tr
+            td 2
+            td 275,000
+            td 5.000
+          tr
+            td 17
+            td 4.996
+            td 4.996
+          tr
+            td 1
+            td 14.050
+            td 4.990
+          tr
+            td 1
+            td 1,629,485
+            td 4.984
+          tr
+            td 5
+            td 275,000
+            td 4.981
+          tr
+            td 1
+            td 50,000
+            td 4.980
+          tr
+            td 1
+            td 85,000
+            td 4.979
+          tr
+            td 1
+            td 14,050
+            td 4.975
+          tr
+            td 1
+            td 85,000
+            td 4.979
+          tr
+            td 1
+            td 5,300
+            td 4.960
+    div.tab-pane.fade(id='bargains', role='tabpanel', aria-labelledby='profile-tab')

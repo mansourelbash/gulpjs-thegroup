@@ -1,0 +1,17 @@
+.tab-content#myTabContent1
+  .tab-pane.fade.show.active(id='commands', role='tabpanel', aria-labelledby='home-tab')
+    .tab-item-content
+      .tab-item-content--header
+        .text-center.paddint-top--5
+          span.btn.btn-buy
+            i.fa-solid.fa-arrow-right.bg-icon-arrow.blink_me
+            | شراء
+          span.btn.btn-sell
+            i.fa-solid.fa-arrow-left.bg-icon-arrow.blink_me
+            | بيع
+      .please-signin-container
+        span.login-logo
+          img(src='./images/login.jpg')
+        span.please-sign-in يرجى تسجيل الدخول
+  .tab-pane.fade(id='wallet', role='tabpanel', aria-labelledby='profile-tab')
+  .tab-pane.fade(id='calc', role='tabpanel', aria-labelledby='contact-tab')

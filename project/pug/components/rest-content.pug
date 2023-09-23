@@ -1,0 +1,51 @@
+section.section__container
+  div.row.m-0
+    div.col-xl-2.col-lg-3.col-md-12.padding-left--0
+      aside.partnerships__container
+        ul
+          li.partnerships__item
+            span.partnerships__title الشركات
+            select.partnerships__select-all
+              option الكل
+
+          each logo, name, star in [['logo-elryan.jpg', 'صندوق الريان', 'star-purple.jpg'], ['country-logo.jpg', 'بلدنا', 'star-gray.jpg'], ['8amko.jpg', 'قامكو', 'star-purple.jpg'], ['ordero.jpg', 'Ordeoo', 'star-gray.jpg'], ['mana3i.jpg', 'المناعي', 'star-purple.jpg'], ['works.jpg', 'أعمال', 'star-gray.jpg'], ['features.jpg', 'مزايا', 'star-purple.jpg'], ['rayanbacket.jpg', 'صندوق الريان', 'star-gray.jpg'], ['qnbk.jpg', 'QNBK', 'star-gray.jpg'], ['t7welieh.jpg', 'التحويلية', 'star-gray.jpg'], ['asmnt.jpg', 'الاسمنت', 'star-gray.jpg'], ['msthmer.jpg', 'مستثمرين', 'star-gray.jpg'], ['logo-elryan.jpg', 'صندوق الريان', 'star-gray.jpg'], ['country-logo.jpg', 'بلدنا', 'star-purple.jpg'], ['8amko.jpg', 'قامكو', 'star-gray.jpg']]
+            li.partnerships__item
+              img.partnerships--logo(src=`./images/${logo}`)
+              span.partnerships--name= name
+              img.partnerships--star.blink_me(src=`./images/${star}`)
+
+    div.col-xl-8.col-lg-6.col-md-12
+      div.price__details
+        div.price__item
+          span.price__item--label الشركة
+          span.price__item--text
+            img(src="./images/logo-elryan.jpg")
+            |  صندوق الريان
+
+        div.price__item
+          img(src="./images/chart-sample.jpg")
+
+        each label, value, color in [['اسهم العرض', '60,046', 'orange'], ['سعر العرض', '40,859', 'orange'], ['السعر الحالي', '40.859', 'green'], ['سعر الطلب', '40.846', 'blue'], ['اسهم الطلب', '7,860', ''], ['التغيير %', '0.39', 'green'], ['اجمالي الاسهم', '1,984,282', ''], ['ريال', '3,567,567', 'purple']]
+          div.price__item
+            span.price__item--label= label
+            span.price__item--text.price__item--number(class=color)= value
+
+      div.control-tabs-container
+        ul.nav.nav-tabs#myTab1(role='tablist')
+          each tab in [['commands', 'الاوامر', 'commands.png'], ['wallet', 'المحفظة', 'wallet.png'], ['calc', 'حاسبتي', 'calc.jpg'], ['account', 'كشف الحساب', 'account-paper.png'], ['transfer', 'التحويلات الالكترونية', 'transfers.png'], ['pay', 'معلومات السداد', 'pay.jpg'], ['notification', 'التنبيهات', 'notification.jpg'], ['signature', 'التوقيع الالكتروني', 'Signature.png']]
+            li.nav-item(role='presentation')
+              button.nav-link(class=tab[0]=== 'commands' ? 'active' : '', id=`${tab[0]}-tab`, data-toggle='tab', data-target=`#${tab[0]}`, type='button', role='tab', aria-controls=`${tab[0]}`, aria-selected=`${tab[0] === 'commands'}`)= `<img src="./images/${tab[2]}"> ${tab[1]}`
+
+        div.tab-content#myTabContent1
+          each tab in [['commands', 'الاوامر'], ['wallet', 'المحفظة'], ['calc', 'حاسبتي']]
+            div.tab-pane.fade(class=tab[0] === 'commands' ? 'show active' : '', id=`${tab[0]}`, role='tabpanel', aria-labelledby=`${tab[0]}-tab`)
+
+    div.col-xl-2.col-lg-3.col-md-12.padding-right--0
+      div.market-by-price__container
+        ul.nav.nav-tabs.nav-market-price#myTab(role='tablist')
+          each tab in [['market_price', 'السوق حسب الاسعار', 'fa-sort'], ['bargains', 'الصفقات', 'fa-filter']]
+            li.nav-item(role='presentation')
+              button.nav-link(class=tab[0] === 'market_price' ? 'active' : '', id=`${tab[0]}-tab`, data-toggle='tab', data-target=`#${tab[0]}`, type='button', role='tab', aria-controls=`${tab[0]}`, aria-selected=`${tab[0] === 'market_price'}`)= `<i class="fa-solid ${tab[2]} margin-left--5"></i> ${tab[1]}`
+
+        div.tab-content#myTabContent
+          each stock, price, value in [[17, '100,950', '5.039'], [1, '10,950', '5.039'], [1, '1,444,400', '5.039'], [5, '85,000', '5.029'], [1, '275,000', '5.020'], [1, '5,000', '5.015'], [1, '50,000', '5.013'], [1, '275,000', '5.010'], [1, '10,950', '5.005'], [1, '20,000', '5.001'], [2, '275,000', '5.000'], [17, '4.996', '4.996'], [1, '14.050', '4.990'], [1, '1,629,485', '4.984'], [5, '275,000', '4.981'], [1, '50,000', '4.980'], [1, '85,000', '4.979'], [1, '14,050', '4.975'], [1, '85,000', '4.979'], [1, '

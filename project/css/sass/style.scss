@@ -1,0 +1,52 @@
+
+@import './abstracts/mixins';
+@import './abstracts/breakpoints';
+@import './abstracts/colors';
+@import './base/font-face';
+@import './utilites/animate';
+@import "../../../node_modules/bootstrap/scss/bootstrap";
+
+@font-face {
+  font-family: 'TheGroupRegular';
+  src: url('../fonts/TheGroup12-Regular.eot');
+  src: url('../fonts/TheGroup12-Regular?#iefix') format('embedded-opentype'),
+      url('../fonts/TheGroup12-Regular.woff2') format('woff2'),
+      url('../fonts/TheGroup12-Regular.woff') format('woff'),
+      url('../fonts/TheGroup12-Regular.ttf') format('truetype'),
+      url('../fonts/TheGroup12-Regular.svg') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'DroidArabicKufi-Bold';
+  src: url('../fonts/DroidArabicKufi-Bold.eot');
+  src: url('../fonts/DroidArabicKufi-Bold?#iefix') format('embedded-opentype'),
+      url('../fonts/DroidArabicKufi-Bold.woff2') format('woff2'),
+      url('../fonts/DroidArabicKufi-Bold.woff') format('woff'),
+      url('../fonts/DroidArabicKufi-Bold.ttf') format('truetype'),
+      url('../fonts/DroidArabicKufi-Bold.svg') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'DroidArabicKufi';
+  src: url('../fonts/DroidArabicKufi.eot');
+  src: url('../fonts/DroidArabicKufi?#iefix') format('embedded-opentype'),
+      url('../fonts/DroidArabicKufi.woff2') format('woff2'),
+      url('../fonts/DroidArabicKufi.woff') format('woff'),
+      url('../fonts/DroidArabicKufi.ttf') format('truetype'),
+      url('../fonts/DroidArabicKufi.svg') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+body{
+  direction: rtl;
+  font-family: 'DroidArabicKufi';
+}
+
+@import './components/header';
+@import './components/section';

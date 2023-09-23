@@ -1,0 +1,139 @@
+.header{
+  &__container{
+    .container{
+      @include ipad{
+        padding: 0px;
+      }
+      @include desktop-lg{
+        max-width: 1890px;
+        padding: 0px;
+      }
+      .qr-container{
+        display: flex;
+      }
+    }
+    .navbar-toggler{
+      @include desktop{
+        background-color: $base_white;
+        border: 1px solid $base_white;
+      }
+      @include mobile{
+        background-color: $base_white;
+        border: 1px solid $base_white;
+        position: absolute;
+        left: 0px;
+        top: 0px;
+        margin: 10px;
+      }
+    }
+    .padding-left--5{padding-left: 5px;}
+    .padding-right--5{padding-right: 5px;}
+    nav{
+      background: rgb(92,73,117);
+      background: linear-gradient(90deg, rgba(92,73,117,1) 0%, rgba(102,64,110,1) 37%, rgba(108,57,105,1) 53%, rgba(115,48,101,1) 100%) !important;
+    }
+
+    .navbar-collapse{
+      .navbar-nav{
+        transition: all .5s ease-in-out;
+        @include mobile{
+          padding: 0px;
+        }
+        li:hover{
+          background-color: #fff;
+          a{
+            color:#886F95;
+          }
+        }
+      }
+      .nav-item{
+        @include mobile{
+          border-left: 0px;
+          padding: 10px 0px;
+          text-align: center;
+        }
+        border-left: 1px solid #886F95;
+        padding: 0 25px;
+        &:last-child{
+          border-left: 0px;
+          padding-left: 0px;
+        }
+        .nav-link{
+          color: #fff;
+          padding: 0px;
+          @include ipad{
+            font-size: 12px;
+          }
+        }
+      }
+
+    }
+  }
+  &__image{
+    max-width: 40px ;
+  }
+  &__login-system{
+    @include ipad{
+       border-left: 0px
+    }
+    @include mobile{
+      border-left: 0px;
+    }
+    font-size: 18px;
+    text-decoration: underline;
+    color: $base_white;
+    margin-right: 5px;
+    border-left: 2px solid #AF548E;
+    padding-left: 28px;
+    cursor: pointer;
+  }
+  &__login-items{
+    padding-right: 28px;
+    display: flex;
+    flex-direction: inherit;
+    gap: 5px;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-shrink: 1;
+    @include mobile{   
+      margin-top: 20px;
+       padding: 0px;
+      }
+    @include ipad{
+      flex-direction: column;
+      align-items: start;
+      }
+  }
+  &__username, &__password{
+    background-color: #90386B;
+    border-radius: 5px;
+    border: 0px;
+    height: 35px;
+    margin: 0px 5px;
+    @include mobile{
+      margin-top: 10px;
+      width: 100%;
+    }
+  }
+  &__login-btn{
+    border-radius: 5px;
+    background: rgb(172,235,195);
+    background: linear-gradient(177deg, rgba(172,235,195,1) 0%, rgba(158,217,179,1) 17%, rgba(101,175,112,1) 79%, rgba(101,175,112,1) 100%);
+    border: 0px;
+    color: $base_white;
+    height: 35px;
+    margin-right: 5px;
+    padding: 0px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    i{
+      transform: scale(-1);
+    }
+    @include mobile{
+      margin-top: 10px;
+      width: 100%;
+    }
+  }
+
+}

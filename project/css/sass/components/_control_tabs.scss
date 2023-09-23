@@ -1,0 +1,95 @@
+.control-tabs-container{
+  margin-top: 10px;
+  .nav-tabs{
+    padding: 0px;
+    @include mobile{
+      gap: 10px;
+      margin-bottom: 10px;
+    }
+    .nav-link{
+      border-color: $white_bg_300;
+      background-color: $white_bg_700;
+      color:$gray_color_700;
+      img{
+        max-width: 22px;
+      }
+      &.active{
+        background-color: $purple_bg_300;
+        color: $base_white
+
+      }
+    }
+  }
+  .tab-item-content{
+    background-color: $white_bg_600;
+    border: 1px solid $white_bg_300;
+    &__buttons{
+      display: flex;
+      justify-content: center;
+      gap: 10px;
+    }
+
+    &--header{
+      background-color: $color_white_200;
+      height: 50px;
+      div{
+        display: flex;
+        gap: 10px;
+        justify-content: center;
+      }
+      .btn-buy, .btn-sell{
+        padding: 5px 60px;
+      }
+      .btn-buy{
+        background-color: $blue_color_200;
+        color: $blue_txt_200;
+        .bg-icon-arrow{
+          background-color: $gray_bg_600;
+          border-radius: 50%;
+          padding: 3px;
+          font-size: 10px;
+          margin-left: 10px;
+
+        }
+      }
+      .btn-sell{
+        background-color: $orange_color_300;
+        color: $text_brown;
+        .bg-icon-arrow{
+          background-color: $bg_brown;
+          border-radius: 50%;
+          padding: 3px;
+          font-size: 10px;
+          margin-left: 10px;
+        }
+      }
+
+    }
+    .please-signin-container{
+      text-align: center;
+      min-height: 578px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      .login-logo{
+        height: 100px;
+        width: 100px;
+        border-radius: 50%;
+        background-color: $base_white;
+        display: inline-block;
+        img{
+          border-radius: 20px;
+          margin-top: 10px;
+        }
+      }
+      .please-sign-in{
+        display: block;
+        margin-top: 60px;
+        font-size: 20px;
+      }
+
+    }
+  }
+
+}

@@ -1,0 +1,42 @@
+@mixin small-mobile {
+  @media (max-width: 576px) {
+    @content;
+  }
+}
+
+@mixin mobile {
+  @media (max-width: 768px) {
+    @content;
+  }
+}
+
+@mixin desktop-md {
+  @media (max-width: 992px) {
+    @content;
+  }
+}
+
+// Custom large screen
+@mixin desktop {
+  @media (min-width: 769px) {
+    @content;
+  }
+}
+
+@mixin desktop-lg {
+  @media (min-width: 1200px) {
+    @content;
+  }
+}
+
+@mixin ipad {
+  @media (min-width: 768px) and (max-width:1200px) {
+    @content;
+  }
+}
+
+@mixin large_screen {
+  @media (min-width: 1200px) and (max-width:1450px) {
+    @content;
+  }
+}

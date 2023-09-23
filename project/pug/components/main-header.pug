@@ -1,0 +1,28 @@
+.header__container
+  nav.navbar.navbar-expand-lg.navbar-light.bg-light
+    .container
+      .qr-container
+        img.header__image(src='./images/qr.png')
+        a.header__login-system الدخول الذكي
+      .header__login-items
+        input.header__username(type='text', name='username')
+        input.header__password(type='password', name='password')
+        button.header__login-btn(type='submit')
+          i.fa-regular.fa-arrow-right-to-bracket.padding-right--5
+          | دخول
+      button.navbar-toggler(type='button', data-toggle='collapse', data-target='#navbarSupportedContent', aria-controls='navbarSupportedContent', aria-expanded='false', aria-label='Toggle navigation')
+        span.navbar-toggler-icon
+      .collapse.navbar-collapse#navbarSupportedContent
+        ul.navbar-nav.mr-auto
+          li.nav-item.active
+            a.nav-link(href='#')
+              i.fa-solid.fa-house.padding-left--5
+              | الرئيسية
+          li.nav-item
+            a.nav-link(href='#')
+              i.fa-regular.fa-lock.padding-left--5
+              | تغيير كلمة المرور
+          li.nav-item
+            a.nav-link
+              i.fa-regular.fa-arrow-right-to-bracket.padding-left--5
+              | خروج

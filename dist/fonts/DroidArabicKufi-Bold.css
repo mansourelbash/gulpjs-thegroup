@@ -1,0 +1,13 @@
+@font-face {
+    font-family: "Droid Arabic Kufi";
+    src: url("DroidArabicKufi-Bold.eot"); /* IE9 */
+    src: url("DroidArabicKufi-Bold.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+    url("DroidArabicKufi-Bold.woff2") format("woff2"), /* chrome 36+, firefox 39+,iOS 10+, Android 67+ */
+    url("DroidArabicKufi-Bold.woff") format("woff"), /* chrome, firefox */
+    url("DroidArabicKufi-Bold.ttf") format("truetype"), /* chrome, firefox, opera, Safari, Android, iOS 4.2+ */
+    url("DroidArabicKufi-Bold.svg#Droid Arabic Kufi") format("svg"); /* iOS 4.1- */
+    font-style: normal;
+    font-weight: normal;
+}
+
+

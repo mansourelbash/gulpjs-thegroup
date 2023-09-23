@@ -1,0 +1,55 @@
+section.section__container
+  div.row.m-0
+    div.col-xl-10.col-lg-10.col-sm-12
+      div.col-xl-8.col-lg-10.col-md-12.padding-right--0
+        //- Start Control List-Of-Conditions Component
+        div.section__list-of-conditions
+          ul
+            li.condition__item
+              img.condition__image.blink_me(src='./images/bell_plus.png')
+              span.condition__name المؤشر
+              span.condition__number 14,000
+            li.condition__item
+              i.fa-solid.fa-circle-chevron-up.chevron-icon-size.color-green.margin-left-10.blink_me
+              span.condition__number.color-green
+                span.margin-right-2 %
+                | 1
+            li.condition__item
+              span.condition__number 161,678,168
+              span.condition__name ريال
+            li.condition__item
+              span.condition__name حالة السوق
+              span.condition__number.color-green
+                span.circle-shape.blink_me
+                | مفتوح
+        //- End Control List-Of-Conditions Component
+      //- Start Control My-Properties Component
+      div.section_my-properties
+        ul
+          li.property__item
+            span.property__name النقد
+            span.property__number 00.00
+          li.property__item
+            span.property__name المحفظة
+            span.property__number 00.00
+          li.property__item
+            span.property__name الموجودات
+            span.property__number 00.00
+          li.property__item
+            span.property__name قيمة اوامر الشراء
+            span.property__number 00.00
+          li.property__item
+            span.property__name الهامش المتاح
+            span.property__number 00.00
+          li.property__item
+            span.property__name المديونية
+            span.property__number 00.00
+          li.property__item.dashboard-image
+            img(src='./images/dashboard.jpg')
+          li.property__item
+            span.property__name القدرة الشرائية
+            span.property__number 00.00
+      //- End Control My-Properties Component
+    div.col-xl-2.col-lg-2.col-sm-12
+      div.logo-group
+        img(src='./images/logo-thegroup.jpg')

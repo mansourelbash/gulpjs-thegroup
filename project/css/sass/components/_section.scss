@@ -1,0 +1,110 @@
+@import './my_properties';
+@import './price_details';
+@import './control_tabs';
+@import './aside_left';
+@import './aside_right';
+.section{
+  &__container{
+    .text-center{
+      text-align: center;
+    }
+    @include mobile{
+      height: initial;
+    }
+    background-color: $white_bg_500;
+
+    .logo-group{
+      img{
+        max-width: 100%;
+        height: 90px;
+        @include mobile{
+          display: flex;
+          margin: 0 auto;
+        }
+        @include ipad{
+          display: flex;
+          margin: 0 auto;
+        }
+      }
+    }
+    .margin-left-10{margin-left: 10px;}
+    .m-0{margin: 0px;}
+    .margin-right-2{margin-right: 2px;}
+    .paddint-top--5{padding-top: 5px;}
+    .margin-left--5{margin-left: 5px;}
+    .padding-left--0{
+      padding-left: 0px;
+    }
+    .padding-right--0{
+      padding-right: 0px;
+
+    }
+    .condition{
+      &__item{
+        @include mobile{
+          margin-bottom: 15px;
+        }
+        list-style: none;
+        display: inline-block;
+        float: right;
+        .color-green{
+          color: $green_color
+        }
+        .chevron-icon-size{
+          font-size: 20px;
+        }
+        .circle-shape{
+          width: 20px;
+          height: 20px;
+          border-radius: 50%;
+          background: radial-gradient(circle, rgba(81,229,165,1) 0%, rgba(56,215,146,1) 16%, rgba(30,200,126,1) 60%, rgba(12,190,112,1) 90%);
+          display: inline-block;
+          margin: 0px 5px;
+          vertical-align: middle;
+          box-shadow: 2px 1px 3px $white_bg_400;
+        }
+      }
+      &__image, &__name, &__number{
+        display: inline-block;
+        margin-left: 10px;
+        font-size: 20px;
+        @include large_screen{
+          font-size: 16px;
+        }
+      }
+      &__image{
+        max-width: 25px;
+
+      }
+      &__name{
+        color: $gray_text_200;
+        font-family: 'DroidArabicKufi-Bold';
+      }
+      &__number{
+        color:$gray_color_300;
+      }
+    
+    }
+  }
+  &__list-of-conditions{
+    ul{
+      @include mobile{
+        flex-direction: column;
+        text-align: right;
+        align-items: center;
+        justify-content: center;
+      }
+      padding: 0px;
+      display: flex;
+      margin: 0px;
+      justify-content: space-between;
+    }
+    background-color: $base_white;
+    border: 2px solid $theme_color;
+    margin: 10px 0px;
+    border-radius: 5px;
+    padding: 10px 20px;
+    z-index: 33;
+    position: relative;
+  }
+}

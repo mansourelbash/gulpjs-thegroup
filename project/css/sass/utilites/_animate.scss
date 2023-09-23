@@ -1,0 +1,32 @@
+@keyframes blinker {
+  50% {
+    opacity: 0;
+  }
+}
+
+@keyframes leaves {
+  0% {
+      transform: scale(1.0);
+  }
+  100% {
+      transform: scale(2.0);
+  }
+}
+
+@keyframes float {
+	0% {
+		transform: translatey(0px);
+	}
+	50% {
+		transform: translatey(-5px);
+	}
+	100% {
+		transform: translatey(0px);
+	}
+}
+
+@keyframes color-change {
+  0% { color: #862254; }
+  50% { color: #92c9f0; }
+  100% { color: #862254; }
+}
