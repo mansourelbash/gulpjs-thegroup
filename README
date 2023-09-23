@@ -38,19 +38,16 @@ This project utilizes Gulp.js, a powerful task runner, to streamline the develop
 
 - **gulp-minimages**: Minifies images to optimize page loading performance.
 
-### 3. Error Handling
 
-- **gulp-bug**: Handles errors and prevents gulp from crashing on error.
-
-### 4. Live Reloading and Synchronization
+### 3. Live Reloading and Synchronization
 
 - **gulp-browser-sync**: Launches a local server and synchronizes browser instances for live reloading during development.
 
-### 5. Sourcemaps
+### 4. Sourcemaps
 
 - **gulp-sourcemaps**: Generates sourcemaps to aid in debugging minified and concatenated files.
 
-### 6. Autoprefixing
+### 5. Autoprefixing
 
 - **gulp-autoprefixer**: Adds vendor prefixes to CSS rules for improved browser compatibility.
 
@@ -60,9 +57,9 @@ This project utilizes Gulp.js, a powerful task runner, to streamline the develop
 
 - Utilize jQuery for enhanced interactivity and dynamic behavior.
 
-### 2. Bootstrap Arab Grid System
+### 2. Bootstrap Grid System
 
-- Leverage the Bootstrap Arab grid system for a responsive layout.
+- Leverage the Bootstrap grid system for a responsive layout.
 
 ### 3. BEM Methodology
 
@@ -80,10 +77,4 @@ This project utilizes Gulp.js, a powerful task runner, to streamline the develop
 
 - **FontAwesome Icons**: Use FontAwesome for high-quality scalable vector icons.
 
-## Contributing
 
-We welcome contributions! Feel free to submit issues and pull requests to help improve this project. Make sure to follow our [contributing guidelines](CONTRIBUTING.md).
-
-## License
-
-This project is licensed under the [MIT License](LICENSE).
