@@ -7,7 +7,7 @@ This project utilizes Gulp.js, a powerful task runner, to streamline the develop
 1. **Clone the Repository:**
 
    ```bash
-   git clone https://github.com/mansourelbash/gulpjs-thegroup-task
+   git clone https://github.com/mansourelbash/gulpjs-thegroup
    cd gulpjs-thegroup-task
    ```
 
